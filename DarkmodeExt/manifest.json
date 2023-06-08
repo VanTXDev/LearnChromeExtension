@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Display Mode Extensions",
+	"description": "Base Level Extension",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup/index.html",
+		"default_icon": "images/dark-mode-icon.png"
+	},
+	"permissions": ["activeTab", "system.display"],
+	"content_scripts": [
+		{
+			"js": ["scripts/content.js"],
+			"matches": ["https://*/*"],
+			"css": ["style/styles.css"],
+			"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": [{
+		"resources": ["js/content.js", "html/index.html", "images/dark-mode-icon.png", "images/day-sunny-icon.png", "style/styles.css"],
+		"matches": ["<all_urls>"]
+	}]
+}

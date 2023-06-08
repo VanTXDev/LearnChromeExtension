@@ -1,0 +1,21 @@
+{
+  "name": "Change Color",
+  "version": "1.0",
+  "description": "Change Color Extension!",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/day-sunny-icon.png"
+  },
+  "manifest_version": 3
+}

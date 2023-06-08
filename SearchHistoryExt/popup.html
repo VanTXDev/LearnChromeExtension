@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            width: 500px;
+        }
+        #content{
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        li {
+            list-style: none;
+        }
+        #btn-search{
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+            border-radius: 10px;
+            margin: 15px auto;
+        }
+        #search_key {
+            width: 100%;
+            height: 20px;
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="content">
+        <h1>Input url keywords</h1>
+        <input type="text" name="search_key" id="search_key" value="" autocomplete="off">
+        <button type="button" id="btn-search">Search</button>
+    </section>
+    <ul id="result-list"></ul>
+    <script src="scripts/content.js"></script>
+</body>
+</html>
